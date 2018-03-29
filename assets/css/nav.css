@@ -1,3 +1,7 @@
+a{
+  text-decoration: none;
+}
+
 .logo-backup{
   transition: opacity 1s;
   position:absolute;
@@ -8,12 +12,12 @@
   width: 185px;
   padding: 10px;
 }
-.hidden{
+
+.logo-hidden{
   opacity: 0;
-  display: none;
 }
 
-.logo-backup h3{
+.logo-backup a{
   margin: 0;
   color: #e29302;
   font-size: 2em;
@@ -43,7 +47,7 @@ nav.nav-container{
   postition: fixed;
   top: 0vh;
 }
-.nav-logo h1{
+.nav-logo a{
   color: #e29302;
   font-size: 2em;
   text-align: center;

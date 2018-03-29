@@ -6,6 +6,7 @@ html, body{
   color: #5f574b;
 }
 
+
 /* For open animation */
 .header-open{
   transform: translate(175px, 0);
@@ -60,7 +61,7 @@ hr.divider:before { /* Not really supposed to work, but does */
 }
 
 .menu-button:hover{
-  
+
 }
 
 .section-title{
@@ -91,4 +92,8 @@ hr.divider:before { /* Not really supposed to work, but does */
   box-sizing: border-box;
   order: 2;
   margin: 5px 0;
+}
+
+.hidden{
+  display: none;
 }

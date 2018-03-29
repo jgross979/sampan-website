@@ -14,7 +14,6 @@ const navControllerL = () =>{
   nav.classList.toggle('nav-closed');
   lHeader.classList.toggle('header-open');
   headerBackground.classList.toggle('header-open');
-  menuContainer.classList.toggle('header-open');
   if(navControl.innerHTML.includes('<i class="fas fa-angle-right"></i>')){
     navControl.innerHTML = '<i class="fas fa-angle-left"></i>'
     hideLogo();
@@ -39,19 +38,19 @@ const navControllerM = () =>{
 
 // Hide Logo
 const hideLogo = ()=>{
-    logoBackup.classList.toggle('hidden');
+    logoBackup.classList.toggle('logo-hidden');
 }
 
 //Nav open on load
 window.onload = ()=>{
   setTimeout(() => {
-     lHeader ? navControllerL(): navControllerM();
+     lHeader || headerBackground ? navControllerL(): navControllerM();
   }, 2000);
 };
 
 // Close nav and move header
 navControl.addEventListener('click', (e)=>{
-    lHeader ? navControllerL(): navControllerM();
+    lHeader || headerBackground ? navControllerL(): navControllerM();
 });
 
 //Add event listeners to menu buttons
