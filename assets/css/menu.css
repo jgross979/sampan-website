@@ -1,0 +1,94 @@
+html, body{
+  background: #fffbf5;
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  color: #5f574b;
+}
+
+/* For open animation */
+.header-open{
+  transform: translate(175px, 0);
+}
+/* Flaired edges, by Tomas Theunissen */
+
+hr.divider {
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr.divider:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+/* Menu */
+
+.menu-container{
+  max-width: 620px;
+  height: 300px;
+  margin: auto;
+  transition: 1s ease;
+  position: relative;
+  top: 70px;
+  padding: 10px;
+}
+
+.menu-header{
+  text-align: center;
+}
+
+.menu-button-container{
+  text-align: center;
+}
+
+.menu-button{
+  background: none;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2em;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.menu-button:hover{
+  
+}
+
+.section-title{
+  text-align: center;
+}
+
+.item-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px 0;
+}
+.item{
+  width: 90%;
+  box-sizing: border-box;
+  font-weight: 700;
+  order: 1;
+  margin: 5px 0;
+}
+.item-desc{
+  width: 90%;
+  box-sizing: border-box;
+  order: 3;
+  margin: 5px 0;
+}
+
+.item-price{
+  width: 10%;
+  box-sizing: border-box;
+  order: 2;
+  margin: 5px 0;
+}

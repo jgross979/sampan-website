@@ -1,7 +1,107 @@
-.nav-container{
-  width: 250px;
+.logo-backup{
+  transition: opacity 1s;
+  position:absolute;
+  left: 280px;
+  top: 10px;
   background: black;
-  opacity: 0.7;
-  height: 100vh;
-  z-index: 1;
+  opacity: .85;
+  width: 185px;
+  padding: 10px;
+}
+.hidden{
+  opacity: 0;
+  display: none;
+}
+
+.logo-backup h3{
+  margin: 0;
+  color: #e29302;
+  font-size: 2em;
+}
+
+/* Nav */
+nav.nav-container{
+  width: 275px;
+  margin: 0;
+  padding: 0;
+  background: black;
+  opacity: 0.85;
+  height: 100%;
+  position:fixed;
+  z-index: 2;
+  transition: 1s ease;
+}
+
+.nav-closed{
+  transform: translate(-250px, 0);
+}
+
+.nav-logo{
+  text-align: center;
+  height: 150px;
+  line-height: 150px;
+  postition: fixed;
+  top: 0vh;
+}
+.nav-logo h1{
+  color: #e29302;
+  font-size: 2em;
+  text-align: center;
+  height: 150px;
+  line-height: 150px;
+  margin: 0;
+}
+
+.nav-list{
+  width: 100%;
+  margin-bottom: 400px;
+}
+
+.nav-item{
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 50px;
+}
+
+.nav-item:hover{
+  background: #2f2e2e;
+
+}
+
+.nav-closed .nav-item:hover{
+  background: black;
+}
+
+.nav-item a{
+  color: #C9C1AB;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+.nav-control{
+  color: #C9C1AB;
+  font-size: 2em;
+  text-align: right;
+  cursor: pointer;
+  position: relative;
+  bottom: 55vh;
+}
+
+.nav-extras{
+  color: #e29302;
+  font-size: 3em;
+  position:absolute;
+  width: 100%;
+  bottom: 10px;
+  text-align: center;
+}
+
+.nav-extras p{
+  font-size: 0.4em;
+}
+
+.nav-extras .smaller{
+  font-size: 0.3em;
+  color: grey;
 }
