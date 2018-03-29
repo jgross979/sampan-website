@@ -1,0 +1,229 @@
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+font-family: 'Playfair Display', serif;
+}
+
+
+.header-container {
+  width: 100%;
+  z-index: 2;
+  position: fixed;
+  text-align: center;
+  top: 35vh;
+  display: flex;
+  justify-content: center;
+}
+
+.header-container h1 {
+  font-family: 'Playfair Display', serif;
+  color: #C9C1AB;
+  font-size: 2em;
+}
+
+.landing-header{
+  margin: auto;
+  background: black;
+  opacity: 0.85;
+  width: 540px;
+  height: 200px;
+  transition: 1s ease;
+  padding: 15px;
+  border-radius: 3px;
+}
+
+.header-background{
+  z-index: 0;
+  width:600px;
+  height: 265px;
+  position: fixed;
+  margin: auto;
+  top: 33vh;
+  transition: 1s ease;
+  opacity: 0.2;
+}
+
+.header-button{
+  border: 1px solid orange;
+  border-radius: 1px;
+  width: 220px;
+  margin:auto;
+}
+.header-button a{
+  font-size: 1.3em;
+  color: orange;
+  text-decoration: none;
+}
+
+.header-open{
+  transform: translate(175px, 0);
+}
+
+.slideshow {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 30s linear infinite;
+}
+
+.slideshow li:nth-child(1) {
+  background-image: url(https://cdn.patchcdn.com/users/255984/2013/08/T800x600/bd914fb1009b293e6dbb2a46a58c19cf.jpg)
+}
+.slideshow li:nth-child(2) {
+  background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2014/11/10/512667/0f990e3119d47e0b19beb2127c11a37b.jpg);
+  animation-delay: 6s;
+}
+.slideshow li:nth-child(3) {
+  background-image: url(https://images.alphacoders.com/199/thumb-1920-199253.jpg);
+  animation-delay: 12s;
+}
+.slideshow li:nth-child(4) {
+  background-image: url(http://pyorr.com/data/out/50/image-159441630.jpg);
+  animation-delay: 18s;
+}
+.slideshow li:nth-child(5) {
+  background-image: url(http://cdn.knowledgehi.com/1920x1200/20121022/food%20rolls%20chopsticks%20chinese%20food%20spring%20rolls%201920x1200%20wallpaper_www.knowledgehi.com_25.jpg);
+  animation-delay: 24s;
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;;
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}
+
+.logo-backup{
+  transition: opacity 1s;
+  color: white;
+  position:relative;
+  left: 285px;
+  top: 10px;
+  background: black;
+  opacity: .85;
+  width: 185px;
+  padding: 10px;
+}
+.hidden{
+  opacity: 0;
+}
+
+.logo-backup h3{
+  margin: 0;
+  color: orange;
+  font-size: 2em;
+}
+
+/* Nav */
+nav.nav-container{
+  width: 275px;
+  margin: 0;
+  padding: 0;
+  background: black;
+  opacity: 0.85;
+  height: 100vh;
+  position:relative;
+  z-index: 2;
+  transition: 1s ease;
+}
+
+.nav-closed{
+  transform: translate(-250px, 0);
+}
+
+.nav-logo{
+  text-align: center;
+  height: 150px;
+  line-height: 150px;
+}
+.nav-logo h1{
+  color: orange;
+  font-size: 2em;
+  text-align: center;
+  height: 150px;
+  line-height: 150px;
+  margin: 0;
+}
+
+.nav-list{
+  width: 100%;
+  margin-bottom: 400px;
+}
+
+.nav-item{
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 50px;
+}
+
+.nav-item:hover{
+  background: #2f2e2e;
+
+}
+
+.nav-item a{
+  color: #C9C1AB;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+.nav-control{
+  color: #C9C1AB;
+  font-size: 2em;
+  text-align: right;
+  cursor: pointer;
+  position: relative;
+  bottom: 45vh;
+}
+
+.nav-extras{
+  color: orange;
+  font-size: 3em;
+  position:relative;
+  bottom: 100px;
+  text-align: center;
+}
+
+.nav-extras p{
+  font-size: 0.4em;
+}
+
+.nav-extras .smaller{
+  font-size: 0.3em;
+  color: grey;
+}
